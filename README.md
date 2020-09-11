@@ -23,7 +23,7 @@ port 8000 needs to be forwarded
 
 ## Technology 
 * Python
-* jango
+* Django
 * Html/css
 
 
