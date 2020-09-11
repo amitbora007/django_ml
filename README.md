@@ -24,8 +24,8 @@ python manage.py runserver 0.0.0.0:8000
 port 8000 needs to be forwarded
 
 ## Technology 
-*Python
-*Django
-*Html/css
+* Python
+* jango
+* Html/css
 
 
