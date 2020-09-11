@@ -3,10 +3,10 @@
 
 ## Installation
 
-Download the project, extract, open cmd/terminal in project directory.
-In case using own model, First build the ML model, serialize it and use. 
-I made the model with jupyter and serialized it with pickle "pickle.dump(lm,open(r"lm.pkl","wb"))".
-This command will create lm.pkl in same directory as your jupyter notebook. copy this pkl file to django yourApp folder and paste it.
+Download the project, extract, open cmd/terminal in project directory.  
+In case using own model, First build the ML model, serialize it and use.   
+I made the model with jupyter and serialized it with pickle "pickle.dump(lm,open(r"lm.pkl","wb"))".  
+This command will create lm.pkl in same directory as your jupyter notebook. copy this pkl file to django yourApp folder and paste it.  
 
 
 ## Usage
