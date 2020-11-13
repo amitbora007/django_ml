@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*a!9lru1nob1_m_yyjjwh0+a#!^=0qha6^noh=rbt4#*2a3&@q'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production! #to run on public ip or domain name: use python manage.py runserver 0.0.0.0:8000 where port 8000 forwarded in router
-DEBUG = True
+DEBUG = config('DEBUG', default=TRUE, cast=bool)
 
-ALLOWED_HOSTS = ['systesting.ml', '192.168.0.104','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['systesting.ml', 'localhost','127.0.0.1']
 
 
 # Application definition
